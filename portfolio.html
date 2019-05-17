@@ -9,15 +9,68 @@
     <body>
        <center> <a href="index.html" class="button">Home</a>
         <a href="portfolio.html" class="button">Portfolio</a>
-        <a href="About me.html"><button>About me</button></a>
-        <h1>This is my Portfolio Page!</h1> </center>   
+      <a href="About me.html"class="button">About me</a>
+        <a href="career.html" class="button">career</a>
+        <h1>This is my Portfolio Page!</h1>  
         <img src="images/folder-transparent-yellow.png" height="100"> 
-
         
         <br>
         <a target="_blank" href="https://scratch.mit.edu">
             <img src="images/scratch.png" height="50">
-        </a>
-    </body>
+
+    </body>  
      <body bgcolor="F9E66F">
+</html>
+<html>
+
+<body>
+<center> 
+
+<a href="javascript:switchTab('tb_1', 'scratch');" id="tb_1" class="tabmenu active"><button>Scratch</button></a>
+<a href="javascript:switchTab('tb_2', 'Biology');" id="tb_2" class="tabmenu"><button>Biology</button></a>
+<a href="javascript:switchTab('tb_3', 'Scratch video');" id="tb_3" class="tabmenu"><button>Scratch Video</button></a>
+
+</center>
+
+<div id="Scratch" class="tabcontent"> 
+<p>Scratch</p>
+<iframe src="https://jamesbmadden.github.io/scratch-silicon/#295335766" width="400px" height="400px" allowFullscreen></iframe>
+</div>
+
+<div id="biology" class="tabcontent" style="display:none;">
+<p>Biology</p>
+<button>Download Resume</button>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/hQbx1bqle58&t" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div>
+<div id="scratch video" class="tabcontent" style="display:none;">
+<p>Scratch video</p>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/nGeKSiCQkPw" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div>
+<div id="content_4" class="tabcontent" style="display:none;">
+<p>Your 4th content</p></p>
+<iframe src="https://jamesbmadden.github.io/scratch-silicon/#295335766" width="400px" height="400px" allowFullscreen></iframe>
+</div>
+</body>
+
+<script>
+function switchTab(tab_id, tab_content) {
+// first of all we get all tab content blocks (I think the best way to get them by class names)
+var x = document.getElementsByClassName("tabcontent");
+var i;
+for (i = 0; i < x.length; i++) {
+x[i].style.display = 'none'; // hide all tab content
+}
+document.getElementById(tab_content).style.display = 'block'; // display the content of the tab we need
+
+// now we get all tab menu items by class names (use the next code only if you need to highlight current tab)
+var x = document.getElementsByClassName("tabmenu");
+var i;
+for (i = 0; i < x.length; i++) {
+x[i].className = 'tabmenu'; 
+}
+document.getElementById(tab_id).className = 'tm_active';
+}
+</script>
+
+
 </html>

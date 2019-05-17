@@ -1,5 +1,5 @@
 body {
-    background-image: url(images/petal.jpg);
+    background-image: url(images/blue.jpg);
     
     color: #FFFFFF;
     background-size: cover;
@@ -8,9 +8,9 @@ body {
     text-shadow: #55555;
 }
 .button {
-    background-color: #F9E66F;
+    background-color: #e6fff5;
     border: none;
-    color: orange;
+    color: pink;
     text-align: center;
     text-decoration: none;
     display: inline-block;
@@ -38,4 +38,33 @@ div {
     font-size: 18px;
     margin: 5px 5px;
     cursor: pointer;
+}
+
+
+ul {
+  list-style-type: none;
+  margin: 7;
+  padding: 0;
+  overflow: hidden;
+  background-color: rgb(213, 238, 246);
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: black;
+  text-align: center;
+  padding: 5px 45px;
+  text-decoration: none;
+}
+
+li a:hover:not(.active) {
+  background-color: rgb(238, 220, 238);
+}
+
+.active {
+  background-color: #3EC1ED;
 }
