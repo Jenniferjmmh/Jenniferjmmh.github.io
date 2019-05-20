@@ -1,14 +1,14 @@
 body {
-    background-image: url(images/blue.jpg);
+    background-image: url(images/marble.jpg);
     
-    color: #FFFFFF;
+    color: #000000;
     background-size: cover;
     text-align: left;
     vertical-align: bottom;
     text-shadow: #55555;
 }
 .button {
-    background-color: #e6fff5;
+    background-color: #ffffff;
     border: none;
     color: pink;
     text-align: center;
@@ -46,7 +46,7 @@ ul {
   margin: 0;
   padding: 0;
   overflow: hidden;
-  background-color: rgb(213, 238, 246);
+  background-color: rgb(255, 255, 255);
 }
 
 li {
@@ -62,9 +62,9 @@ li a {
 }
 
 li a:hover:not(.active) {
-  background-color: rgb(238, 220, 238);
+  background-color: rgb(229, 225, 224);
 }
 
 .active {
-  background-color: #3EC1ED;
+  background-color: #000000;
 }
